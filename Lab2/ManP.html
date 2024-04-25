@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachinder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="PopupStyle.css">
+    <link rel="stylesheet" href="InfoStyle.css">
+</head>
+<body>
+<div class="frame-1">
+    <div class="hadder">
+        <span class="teachinder">Teachinder</span>
+        <div class="container-6">
+            <div class="container-2">
+                <span class="name-note-or-age-to-search">Name, note or age to search</span>
+            </div>
+            <div class="container-8">
+                <span class="search">Search</span>
+            </div>
+        </div>
+    </div>
+    <div class="stiki">
+        <span class="teachers-1">Teachers</span>
+        <span class="statistics-2">Statistics</span>
+        <span class="favorites-3">Favorites</span>
+        <span class="about-1">About</span>
+        <span class="add-teacher-1" onclick="openPopup()">Add teacher</span>
+    </div>
+    <div class="top-teacher-main">
+        <div class="line-1"></div>
+        <div class="top-teachers">Top Teachers</div>
+        <div class="container-4">
+            <div class="container-7">
+                <label for="age">Age</label>
+                <select id="age">
+                    <option value="18-31">18 - 31</option>
+                    <option value="31-45">31 - 45</option>
+                    <option value="45-60">45 - 60</option>
+                    <option value="60+">60 +</option>
+                </select>
+                <div class="line-2"></div>
+
+                <label for="region">Region</label>
+                <select id="region">
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Africa">Africa</option>
+                </select>
+                <div class="line-3"></div>
+
+                <label for="sex">Sex</label>
+                <select id="sex">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="line-4"></div>
+
+                <label for="only-with-photo" class="only-with-photo">Only with photo</label>
+                <input type="checkbox" id="only-with-photo">
+                <div class="line-5"></div>
+
+                <label for="only-favorites" class="only-favorites">Only favorites</label>
+                <input type="checkbox" id="only-favorites">
+            </div>
+        </div>
+    </div>
+    <div class="all-of-cards">
+        <div class="CardOfTheTeacher" onclick="openInfo()">
+            <img src="images/teacher_image1.jpg" alt="Teacher 1 Photo">
+            <div class="FullName">Alia Gamarko</div>
+            <div class="Specialization">Digital Art</div>
+            <div class="Country">United States</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image2.jpg" alt="Teacher 2 Photo">
+            <div class="FullName">Jane Smith</div>
+            <div class="Specialization">Physics</div>
+            <div class="Country">Canada</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image3.jpg" alt="Teacher 3 Photo">
+            <div class="FullName">David Johnson</div>
+            <div class="Specialization">Chemistry</div>
+            <div class="Country">Australia</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image4.jpg" alt="Teacher 4 Photo">
+            <div class="FullName">Emily Brown</div>
+            <div class="Specialization">English</div>
+            <div class="Country">United Kingdom</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image5.jpg" alt="Teacher 5 Photo">
+            <div class="FullName">Michael Wilson</div>
+            <div class="Specialization">History</div>
+            <div class="Country">Germany</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image6.jpg" alt="Teacher 6 Photo">
+            <div class="FullName">Sarah Taylor</div>
+            <div class="Specialization">Biology</div>
+            <div class="Country">France</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image7.jpg" alt="Teacher 7 Photo">
+            <div class="FullName">Daniel Martinez</div>
+            <div class="Specialization">Art</div>
+            <div class="Country">Spain</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image8.jpg" alt="Teacher 8 Photo">
+            <div class="FullName">Olivia Garcia</div>
+            <div class="Specialization">Music</div>
+            <div class="Country">Italy</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image9.jpg" alt="Teacher 9 Photo">
+            <div class="FullName">Liam Rodriguez</div>
+            <div class="Specialization">Physical Education</div>
+            <div class="Country">Brazil</div>
+        </div>
+    </div>
+    <div class="statistics">
+        <div class="line-6"></div>
+        <div class="statistics-title">Statistics
+            <div class="line-table"></div>
+        </div>
+        <div class="statistics-table">
+            <div class="statistics-row">
+                <div class="statistics-header">Name</div>
+                <div class="statistics-header">Specialty</div>
+                <div class="statistics-header">Age</div>
+                <div class="statistics-header">Gender</div>
+                <div class="statistics-header">Nationality</div>
+            </div>
+            <div class="statistics-row">
+                <div class="statistics-item">John Doe</div>
+                <div class="statistics-item">Mathematics</div>
+                <div class="statistics-item">35</div>
+                <div class="statistics-item">Male</div>
+                <div class="statistics-item">United States</div>
+            </div>
+            <div class="statistics-row">
+                <div class="statistics-item">Alice Smith</div>
+                <div class="statistics-item">Physics</div>
+                <div class="statistics-item">28</div>
+                <div class="statistics-item">Female</div>
+                <div class="statistics-item">Canada</div>
+            </div>
+            <div class="statistics-row">
+                <div class="statistics-item">Michael Johnson</div>
+                <div class="statistics-item">Chemistry</div>
+                <div class="statistics-item">40</div>
+                <div class="statistics-item">Male</div>
+                <div class="statistics-item">Australia</div>
+            </div>
+            <div class="statistics-row">
+                <div class="statistics-item">Emily Brown</div>
+                <div class="statistics-item">Biology</div>
+                <div class="statistics-item">32</div>
+                <div class="statistics-item">Female</div>
+                <div class="statistics-item">United Kingdom</div>
+            </div>
+            <div class="statistics-row">
+                <div class="statistics-item">David Lee</div>
+                <div class="statistics-item">History</div>
+                <div class="statistics-item">45</div>
+                <div class="statistics-item">Male</div>
+                <div class="statistics-item">Germany</div>
+            </div>
+            <div class="statistics-row">
+                <div class="statistics-item">Sophia Garcia</div>
+                <div class="statistics-item">Computer Science</div>
+                <div class="statistics-item">30</div>
+                <div class="statistics-item">Female</div>
+                <div class="statistics-item">Brazil</div>
+            </div>
+            <div class="statistics-row">
+                <div class="statistics-item">Daniel Martinez</div>
+                <div class="statistics-item">Literature</div>
+                <div class="statistics-item">38</div>
+                <div class="statistics-item">Male</div>
+                <div class="statistics-item">Spain</div>
+            </div>
+            <div class="statistics-row">
+                <div class="statistics-item">Olivia Wilson</div>
+                <div class="statistics-item">Art</div>
+                <div class="statistics-item">25</div>
+                <div class="statistics-item">Female</div>
+                <div class="statistics-item">France</div>
+            </div>
+            <div class="statistics-row">
+                <div class="statistics-item">Liam Thomas</div>
+                <div class="statistics-item">Music</div>
+                <div class="statistics-item">42</div>
+                <div class="statistics-item">Male</div>
+                <div class="statistics-item">Italy</div>
+            </div>
+            <div class="line-8"></div>
+        </div>
+    </div>
+    <div class="favorites-1">
+        <div class="favorites-title">Favorites</div>
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image1.jpg" alt="Teacher 1 Photo">
+            <div class="FullName">John Doe</div>
+            <div class="Country">United States</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image2.jpg" alt="Teacher 2 Photo">
+            <div class="FullName">Jane Smith</div>
+            <div class="Country">Canada</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image3.jpg" alt="Teacher 3 Photo">
+            <div class="FullName">David Johnson</div>
+            <div class="Country">Australia</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image4.jpg" alt="Teacher 4 Photo">
+            <div class="FullName">Emily Brown</div>
+            <div class="Country">United Kingdom</div>
+        </div>
+
+        <div class="CardOfTheTeacher">
+            <img src="images/teacher_image5.jpg" alt="Teacher 5 Photo">
+            <div class="FullName">Michael Wilson</div>
+            <div class="Country">Germany</div>
+        </div>
+    </div>
+    <div class="line-9"></div>
+    <div class="alot-of-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in eros sed ipsum sagittis porta quis at ex. Donec egestas condimentum tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque et sapien lorem. Proin ultrices magna ut venenatis euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent id mattis erat. Phasellus a nibh a lorem euismod interdum vitae quis quam. Integer tristique non enim vitae tristique. Ut laoreet ipsum vel eros volutpat, at ultrices est eleifend.
+
+        Cras sit amet leo vitae mauris maximus suscipit. Vestibulum vel consequat orci, eget fringilla nisi. Sed rhoncus ligula sit amet lacus sodales, molestie sagittis mauris ornare. Nam tincidunt lectus sit amet hendrerit placerat. Duis diam orci, malesuada eget libero non, tincidunt facilisis sapien. Etiam posuere bibendum nisi a dapibus. Morbi sed lectus tempor, dignissim enim id, convallis erat. Aenean molestie, purus vel pharetra ultrices, risus sem iaculis neque, sed suscipit nulla massa non quam. Maecenas nec condimentum est, id convallis ipsum. Aliquam erat volutpat. Etiam nec viverra urna.
+
+        Praesent varius, purus id finibus faucibus, mi mi pellentesque nulla, ac vestibulum tellus enim vestibulum eros. Ut faucibus libero pellentesque, efficitur est et, pharetra odio. Sed placerat magna tempor turpis sollicitudin condimentum. Maecenas ac facilisis nibh, auctor laoreet odio. Mauris quis nunc interdum, sagittis ipsum vel, accumsan dolor. Etiam vitae enim posuere, laoreet eros at, pretium mi. Duis facilisis tortor ut tortor finibus iaculis. Duis sit amet arcu nunc. Integer sit amet neque mi.
+
+    </div>
+    <div class="line-7"></div>
+    <div class="footer">
+        <span class="teachers">Teachers</span>
+        <span class="statistics-1">Statistics</span>
+        <span class="favorites-2">Favorites</span>
+        <span class="about">About</span>
+        <span class="add-teacher" onclick="openPopup()">Add teacher</span>
+    </div>
+</div>
+<script src="AddTeacher.js"></script>
+<script src="PopUpInfo.js"></script>
+</body>
+</html>

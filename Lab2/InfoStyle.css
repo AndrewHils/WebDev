@@ -1,0 +1,177 @@
+.popup-overlay-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 909px;
+    height: 560px;
+    overflow: auto;
+    position: relative;
+}
+
+.close-in {
+    position: relative;
+    top: 20%;
+    left: 95.5%;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.popup-content-info h2 {
+    /* Teacher Info */
+    position: absolute;
+    width: 150px;
+    height: 29px;
+    left: 15px;
+    top: 0px;
+    bottom: 512px;
+
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: center;
+}
+.gray-placeholder {
+    position: absolute;
+    width: 949px;
+    height: 67px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 493px;
+    background: rgb(70, 70, 72);
+}
+
+.popup-content-info img {
+    object-fit: cover;
+    position: absolute;
+    width: 318px;
+    height: 320px;
+    left: 24px;
+    top: 88px;
+}
+
+.FullName-info {
+    position: absolute;
+    width: 223px;
+    height: 40px;
+    left: 409px;
+    top: 88px;
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+}
+
+.Specialization-info {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+}
+
+.Secondary-info {
+    color: rgb(118, 118, 118);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+.Container-info {
+    position: absolute;
+    width: 165px;
+    height: auto;
+    left: 409px;
+    right: 375px;
+    top: 171px;
+    bottom: 191px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Container-info > div:not(:first-child) {
+    margin-top: 21px;
+}
+
+.Country-info {
+    position: relative;
+    margin-bottom: 21px;
+}
+
+.Age-info {
+    position: relative;
+    margin-bottom: 21px;
+}
+
+.Email-info {
+    position: relative;
+    margin-bottom: 21px;
+}
+.Email-info a {
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    color: #71BCC0; /* Задаем цвет ссылки */
+}
+.Email-info a:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении на ссылку */
+}
+
+.Descript-info {
+    /* Description */
+    position: absolute;
+    width: 894px;
+    height: 98px;
+    left: 3%;
+    bottom: 13%;
+
+    color: rgb(118, 118, 118);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .popup-content-info {
+        width: 610px;
+        height: 560px;
+        overflow: auto;
+        position: relative;
+    }
+    .close-in {
+        left: 64%;
+    }
+
+    .Descript-info {
+        /* Description */
+        width: 596px;
+
+        font-size: 13px;
+        line-height: 14px;
+        text-align: justify;
+    }
+}
