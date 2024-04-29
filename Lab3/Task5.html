@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Task5.css">
+  <title>Search Users</title>
+</head>
+<body>
+<h1>Search Users</h1>
+<div>
+  <label for="searchParam">Search by:</label>
+  <select id="searchParam">
+    <option value="full_name">Name</option>
+    <option value="age">Age</option>
+    <option value="note">Note</option>
+  </select>
+  <label for="searchValue">Value:</label>
+  <input type="text" id="searchValue">
+  <button id = "searchButton">Search</button>
+</div>
+<div id="searchResults"></div>
+<script type="module" src="Task5.js"></script>
+</body>
+</html>

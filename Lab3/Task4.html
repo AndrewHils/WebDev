@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Task4.css">
+  <title>Sorting Users Task 4</title>
+</head>
+<body>
+<h1>Sorting Users</h1>
+<div>
+  <label for="sortParam">Sort by:</label>
+  <select id="sortParam">
+    <option value="full_name">Full Name</option>
+    <option value="age">Age</option>
+    <option value="birthday">Birthday</option>
+    <option value="country">Country</option>
+  </select>
+  <label for="sortOrder">Sort order:</label>
+  <select id="sortOrder">
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+  </select>
+  <button id="sortButton">Sort Users</button>
+</div>
+<div id="sortedUsers"></div>
+<script type="module" src="Task4.js"></script>
+</body>
+</html>

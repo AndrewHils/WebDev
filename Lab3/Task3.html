@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Task3.css">
+  <title>User Filtering Task 3</title>
+</head>
+<body>
+<h1>User Filtering</h1>
+<div>
+  <label for="country">Country:</label>
+  <select id="country">
+    <option value="">Any</option>
+    <option value="Australia">Australia</option>
+    <option value="Canada">Canada</option>
+    <option value="Denmark">Denmark</option>
+    <option value="Finland">Finland</option>
+    <option value="France">France</option>
+    <option value="Germany">Germany</option>
+    <option value="Iran">Iran</option>
+    <option value="Ireland">Ireland</option>
+    <option value="Italy">Italy</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="New Zealand">New Zealand</option>
+    <option value="Norway">Norway</option>
+    <option value="Spain">Spain</option>
+    <option value="Switzerland">Switzerland</option>
+    <option value="Turkey">Turkey</option>
+    <option value="United States">United States</option>
+  </select>
+</div>
+<div>
+  <div id="ageLabel"> Age:</div>
+  <label for="minAge">From:</label>
+  <input type="number" id="minAge">
+  <label for="maxAge">To:</label>
+  <input type="number" id="maxAge">
+</div>
+<div>
+  <label for="gender">Gender:</label>
+  <select id="gender">
+    <option value="">Any</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</div>
+<div>
+  <label for="favorite">Favorite:</label>
+  <input type="checkbox" id="favorite" value="false">
+</div>
+<button id="filterButton">Filter Users</button>
+<div id="filteredUsers"></div>
+<script type="module" src="Task3.js"></script>
+</body>
+</html>
