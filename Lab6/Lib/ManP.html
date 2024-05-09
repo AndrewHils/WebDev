@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachinder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="PopupStyle.css">
+    <link rel="stylesheet" href="InfoStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+</head>
+<body>
+<div class="frame-1">
+    <div class="hadder">
+        <span class="teachinder">Teachinder</span>
+        <div class="container-6">
+            <div class="container-2">
+                <input class="name-note-or-age-to-search"
+                       id="search-input" type="text"
+                       placeholder="Name, note or age to search" />
+            </div>
+            <div class="container-8">
+                <span class="search">Search</span>
+            </div>
+        </div>
+    </div>
+    <div class="stiki">
+        <span class="teachers-1">Teachers</span>
+        <span class="statistics-2">Statistics</span>
+        <span class="favorites-3">Favorites</span>
+        <span class="about-1">About</span>
+        <span class="add-teacher-1" onclick="openPopup()">Add teacher</span>
+    </div>
+    <div class="top-teacher-main">
+        <div class="line-1"></div>
+        <div class="top-teachers">Top Teachers</div>
+        <div class="container-4">
+            <div class="container-7">
+                <label for="age">Age</label>
+                <select id="age">
+                    <option value="">Any</option>
+                    <option value="18-31">18 - 31</option>
+                    <option value="31-45">31 - 45</option>
+                    <option value="45-60">45 - 60</option>
+                    <option value="60-100">60 +</option>
+                </select>
+                <div class="line-2"></div>
+
+                <label for="region">Country</label>
+                <select id="region">
+                    <option value="">Any</option>
+                    <option value="United States">United States</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="North Macedonia">North Macedonia</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Vatican City">Vatican City</option>
+                </select>
+                <div class="line-3"></div>
+
+                <label for="sex">Sex</label>
+                <select id="sex">
+                    <option value="">Any</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="line-4"></div>
+
+                <label for="only-with-photo" class="only-with-photo">Only with photo</label>
+                <input type="checkbox" id="only-with-photo">
+                <div class="line-5"></div>
+
+                <label for="only-favorites" class="only-favorites">Only favorites</label>
+                <input type="checkbox" id="only-favorites">
+            </div>
+        </div>
+    </div>
+
+    <div class="all-of-cards" id="teacher-list">
+        <!-- Динамічно додані викладачі будуть вставлені сюди -->
+    </div>
+    <div class="statistics">
+        <div class="line-6"></div>
+        <div class="statistics-title">Statistics</div>
+        <div class="statistics-table scrollable">
+            <!-- Список викладачів у "statistics" буде динамічно оновлюватися -->
+            <div style="width: 700px; height: 500px; position: absolute; left: 20%; ">
+                <canvas id="myPieChart"></canvas>
+            </div>
+
+        </div>
+    </div>
+    <div class="favorites-1" id="favorites-list">
+        <!-- Список викладачів у "Favorites" буде динамічно оновлюватися -->
+    </div>
+
+    <div class="alot-of-text">
+        <div class="line-7"></div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in eros sed ipsum sagittis porta quis at ex. Donec egestas condimentum tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque et sapien lorem. Proin ultrices magna ut venenatis euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent id mattis erat. Phasellus a nibh a lorem euismod interdum vitae quis quam. Integer tristique non enim vitae tristique. Ut laoreet ipsum vel eros volutpat, at ultrices est eleifend.
+
+            Cras sit amet leo vitae mauris maximus suscipit. Vestibulum vel consequat orci, eget fringilla nisi. Sed rhoncus ligula sit amet lacus sodales, molestie sagittis mauris ornare. Nam tincidunt lectus sit amet hendrerit placerat. Duis diam orci, malesuada eget libero non, tincidunt facilisis sapien. Etiam posuere bibendum nisi a dapibus. Morbi sed lectus tempor, dignissim enim id, convallis erat. Aenean molestie, purus vel pharetra ultrices, risus sem iaculis neque, sed suscipit nulla massa non quam. Maecenas nec condimentum est, id convallis ipsum. Aliquam erat volutpat. Etiam nec viverra urna.
+
+            Praesent varius, purus id finibus faucibus, mi mi pellentesque nulla, ac vestibulum tellus enim vestibulum eros. Ut faucibus libero pellentesque, efficitur est et, pharetra odio. Sed placerat magna tempor turpis sollicitudin condimentum. Maecenas ac facilisis nibh, auctor laoreet odio. Mauris quis nunc interdum, sagittis ipsum vel, accumsan dolor. Etiam vitae enim posuere, laoreet eros at, pretium mi. Duis facilisis tortor ut tortor finibus iaculis. Duis sit amet arcu nunc. Integer sit amet neque mi.
+
+        </div>
+    </div>
+    <div class="footer">
+        <span class="teachers">Teachers</span>
+        <span class="statistics-1">Statistics</span>
+        <span class="favorites-2">Favorites</span>
+        <span class="about">About</span>
+        <span class="add-teacher" onclick="openPopup()">Add teacher</span>
+    </div>
+</div>
+<!--Оновлені скрипти-->
+<script src="AddTeacher.js"></script>
+<script type="module" src="PopUpInfo.js"></script>
+<script type="module" src="Task/Task1.js"></script>
+<script type="module" src="Task/Task3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs/plugin/isLeapYear.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs/plugin/advancedFormat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+</body>
+</html>
