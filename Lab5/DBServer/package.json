@@ -1,0 +1,14 @@
+{
+  "name": "dbserver",
+  "version": "1.0.0",
+  "description": "Teacher app with json-server",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
