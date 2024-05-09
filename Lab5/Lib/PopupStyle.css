@@ -1,0 +1,320 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Черный полупрозрачный фон */
+    backdrop-filter: blur(5px); /* Размытие фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Поместить поверх остального контента */
+}
+
+.popup-overlay-hide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Размытие фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; /* Поместить поверх остального контента */
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 560px; /* Фиксированная ширина iframe */
+    height: 90%;
+    overflow: auto; /* Добавляет прокрутку, если содержимое не помещается */
+    position: relative;
+}
+
+.popup-iframe {
+    width: 560px; /* Фиксированная ширина iframe */
+    height: 740px; /* Фиксированная высота iframe */
+    margin: 0 auto; /* Автоматический отступ слева и справа (центрирование по горизонтали) */
+    display: block; /* Блочный элемент */
+    border: none; /* Убираем границу iframe */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 5%; /* Располагаем iframe вверху страницы */
+    left: 0; /* Располагаем iframe влево страницы */
+    align-content: center;
+    right: 0; /* Располагаем iframe вправо страницы */
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    color: white; /* Белый цвет для крестика */
+    font-weight: bold; /* Толстый текст для крестика */
+    font-size: 30px;
+}
+
+.popup-content h2 {
+    /* Add Teacher */
+    position: absolute;
+    width: 182px;
+    height: 32px;
+    left: 25px;
+    right: 359px;
+    top: 10px;
+    bottom: 843px;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: left;
+}
+.gray-place {
+    /* Rectangle 7 */
+    position: absolute;
+    /*width: 566px;*/
+    height: 80px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 828px;
+    background: rgb(70, 70, 72);
+}
+.popup-info{
+    color: rgb(95, 95, 95);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+label[for="teacher-name"] {
+    /* Name */
+    position: absolute;
+    width: 43px;
+    height: 18px;
+    left: 40px;
+    right: 483px;
+    top: 95px;
+}
+#teacher-name {
+    /* Rectangle 8 */
+    position: absolute;
+    width: 486px;
+    height: 38px;
+    left: 40px;
+    top: 116px;
+    box-sizing: border-box;
+    border: 1px solid rgb(110, 108, 108);
+    background: rgba(217, 217, 217, 0);
+}
+#teacher-name::placeholder {
+    /* Стиль для подсказки */
+    color: #999; /* Серый цвет */
+    text-indent: 10px;
+}
+#teacher-name:focus::placeholder {
+    /* Стиль для подсказки, когда поле в фокусе */
+    color: transparent; /* Прозрачный цвет, чтобы скрыть подсказку */
+}
+
+label[for="teacher-specialty"] {
+    /* Speciality */
+    position: absolute;
+    width: 73px;
+    height: 18px;
+    left: 43px;
+    top: 174px;
+}
+#teacher-specialty {
+    /* Rectangle 9 */
+    position: absolute;
+    width: 486px;
+    height: 38px;
+    left: 40px;
+    top: 197px;
+    text-indent: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(110, 108, 108);
+    background: rgba(217, 217, 217, 0);
+}
+
+label[for="teacher-country"] {
+    /* Country */
+    position: absolute;
+    width: 62px;
+    height: 18px;
+    left: 40px;
+    top: 255px;
+}
+#teacher-country {
+    /* Rectangle 10 */
+    position: absolute;
+    width: 227px;
+    height: 38px;
+    left: 40px;
+    top: 278px;
+    text-indent: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(110, 108, 108);
+    background: rgba(217, 217, 217, 0);
+}
+label[for="teacher-city"] {
+    /* City */
+    position: absolute;
+    width: 35px;
+    height: 18px;
+    left: 299px;
+    top: 255px;
+}
+#teacher-city {
+    /* Rectangle 11 */
+    position: absolute;
+    width: 227px;
+    height: 38px;
+    left: 299px;
+    top: 278px;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(110, 108, 108);
+    background: rgba(217, 217, 217, 0);
+}
+label[for="teacher-email"] {
+    /* Email */
+    position: absolute;
+    width: 42px;
+    height: 18px;
+    left: 40px;
+    top: 336px;
+}
+#teacher-email {
+    /* Rectangle 12 */
+    position: absolute;
+    width: 227px;
+    height: 38px;
+    left: 40px;
+    top: 359px;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(110, 108, 108);
+    background: rgba(217, 217, 217, 0);
+}
+label[for="teacher-phone"] {
+    /* Phone */
+    position: absolute;
+    width: 50px;
+    height: 18px;
+    left: 299px;
+    top: 336px;
+}
+#teacher-phone {
+    /* Rectangle 13 */
+    position: absolute;
+    width: 227px;
+    height: 38px;
+    left: 299px;
+    top: 359px;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(110, 108, 108);
+    background: rgba(217, 217, 217, 0);
+}
+
+label[for="teacher-dob"] {
+    /* Date of birth */
+    position: absolute;
+    width: 96px;
+    height: 18px;
+    left: 40px;
+    top: 417px;
+}
+#teacher-dob {
+    /* Rectangle 14 */
+    position: absolute;
+    width: 227px;
+    height: 38px;
+    left: 40px;
+    top: 440px;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(110, 108, 108);
+    background: rgba(217, 217, 217, 0);
+}
+#teacher-gender {
+    /* Male */
+    position: absolute;
+    width: 300px;
+    height: 18px;
+    left: 60px;
+    top: 468px;
+    border: none;
+}
+#teacher-gender legend {
+    /* Sex */
+    position: relative;
+    left: -35px;
+    bottom: -23px;
+}
+label[for="background-color"] {
+    /* Background color */
+    position: absolute;
+    width: 133px;
+    height: 18px;
+    left: 40px;
+    top: 526px;
+}
+#background-color {
+    position: absolute;
+    left: 173px;
+    top: 522px;
+}
+
+label[for="teacher-note"] {
+    /* Notes (optional) */
+    position: absolute;
+    width: 114px;
+    height: 18px;
+    left: 40px;
+    top: 563px;
+}
+#teacher-note {
+    /* Rectangle 15 */
+    position: absolute;
+    width: 486px;
+    height: 100px;
+    left: 40px;
+    top: 590px;
+    box-sizing: border-box;
+    border: 1px solid rgb(110, 108, 108);
+    background: rgba(217, 217, 217, 0);
+    text-align: left; /* Устанавливаем выравнивание текста влево */
+    vertical-align: top;
+}
+
+input[id="teacher-add"] {
+    /* Add */
+    /* Rectangle 16 */
+    position: absolute;
+    width: 486px;
+    height: 51px;
+    left: 40px;
+    top: 700px;
+    color: rgb(247, 92, 73);
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(251, 121, 107);
+    background: rgba(217, 217, 217, 0);
+}
+#teacher-add:hover {
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+

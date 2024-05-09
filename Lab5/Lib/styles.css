@@ -1,0 +1,1061 @@
+.hadder {
+    position: relative;
+    width: 1200px;
+    height: 59px;
+    left: 98px;
+    right: 100px;
+    top: 22px;
+    bottom: 2365px;
+}
+
+.hadder .teachinder {
+    /* Teachinder */
+    position: absolute;
+    width: 301px;
+    height: 59px;
+    left: 0%;
+    right: 69.96%;
+    bottom: 0%;
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: left;
+    letter-spacing: 5px; /* Увеличиваем расстояние между буквами */
+    text-shadow:
+            2px 1px 0 black, /* Тень черного цвета справа от текста */
+            -2px -1px 0 rgb(248, 108, 91); /* Тень оранжевого цвета слева от текста */
+}
+
+.hadder .container-6 .container-2 .name-note-or-age-to-search {
+    position: absolute;
+    width: 222px;
+    height: 42px;
+    left: 74.57%;
+    font-family: Arial;
+    top: 28.81%;
+    bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(118, 118, 118);
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 18px;
+    text-align: center;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+.hadder .container-6 .container-8 .search {
+    /* Search */
+    position: absolute;
+    width: 94px;
+    height: 42px;
+    left: 94.62%;
+    right: 0%;
+    top: 28.81%;
+    bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(248, 108, 91);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 520;
+    line-height: 18px;
+    text-align: center;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(248, 108, 91);
+}
+
+.stiki {
+    position: absolute;
+    width: 1100px;
+    height: 53px;
+    left: 98px;
+    right: 100px;
+    top: 139px;
+    bottom: 2254px;
+
+    color: rgb(247, 92, 73);
+    font-family: Arial;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+}
+
+.stiki .teachers-1 {
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    left: 0%;
+    right: 90.32%;
+    top: 30.19%;
+    bottom: 30.19%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stiki .statistics-2{
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    left: 13.47%;
+    right: 76.85%;
+    top: 30.19%;
+    bottom: 30.19%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stiki .favorites-3{
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    left: 26.95%;
+    right: 63.37%;
+    top: 30.19%;
+    bottom: 30.19%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stiki .about-1{
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    left: 42.52%;
+    right: 51.8%;
+    top: 30.19%;
+    bottom: 30.19%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stiki .add-teacher-1{
+    position: absolute;
+    width: 168px;
+    height: 53px;
+    left: 97%;
+    right: 0%;
+    bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 25px;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(247, 92, 73);
+    cursor: pointer;
+}
+
+.next-teachers{
+    /*position: absolute;*/
+    width: 168px;
+    height: 53px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 25px;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(247, 92, 73);
+    cursor: pointer;
+}
+
+.stiki .add-teacher-1:hover {
+    cursor: pointer;
+}
+
+.top-teacher-main {
+    position: absolute;
+    width: 1200px;
+    height: 149px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 235px;
+}
+
+.top-teacher-main .line-1 {
+    position: absolute;
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    left: 48%;
+    transform: translateX(-50%);
+    top: -0.5px;
+}
+
+.top-teacher-main .top-teachers{
+    /* Top Teachers */
+    position: absolute;
+    width: 237px;
+    height: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 21.48%;
+    bottom: 53.02%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: center;
+}
+
+.top-teacher-main .container-7{
+    color: rgb(118, 118, 118);
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+}
+
+label[for="age"] {
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    left: 0%;
+    right: 96.24%;
+    top: 81.21%;
+    bottom: 4.7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label[for="region"] {
+    position: absolute;
+    width: 43px;
+    height: 21px;
+    left: 13.88%;
+    top: 81.21%;
+    bottom: 4.7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label[for="sex"] {
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    left: 30%;
+    top: 80.54%;
+    bottom: 5.37%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* Стили для выпадающего списка */
+#sex {
+    position: absolute;
+    width: 87px;
+    height: 34px;
+    left: 400px;
+    top: 76%;
+    text-align: center;
+}
+#age {
+    position: absolute;
+    width: 76px;
+    height: 34px;
+    left: 40px;
+    top: 76%;
+    text-align: center;
+}
+#region {
+    position: absolute;
+    width: 87px;
+    height: 34px;
+    left: 220px;
+    top: 76%;
+    text-align: center;
+}
+#only-with-photo{
+    position: absolute;
+    left: 570px;
+    top: 80.54%;
+}
+#only-favorites{
+    position: absolute;
+    left: 775px;
+    top: 80.54%;
+}
+
+.top-teacher-main .container-7 .only-with-photo{
+    position: absolute;
+    width: 116px;
+    height: 21px;
+    left: 50%;
+    top: 80.54%;
+    bottom: 5.37%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.top-teacher-main .container-7 .only-favorites{
+    position: absolute;
+    width: 83px;
+    height: 21px;
+    left: 67%;
+    top: 80.54%;
+    bottom: 5.37%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.top-teacher-main .container-7 .line-2{
+    position: absolute;
+    width: 37px;
+    height: 0;
+    left: 120.5px;
+    top: 130px;
+    transform: rotate(90.00deg);
+    border: 1px dashed rgb(118, 118, 118);
+}
+.top-teacher-main .container-7 .line-3{
+    position: absolute;
+    width: 37px;
+    height: 0;
+    left: 310.5px;
+    top: 130px;
+    transform: rotate(90.00deg);
+    border: 1px dashed rgb(118, 118, 118);
+}
+.top-teacher-main .container-7 .line-4{
+    position: absolute;
+    width: 37px;
+    height: 0;
+    left: 510.5px;
+    top: 130px;
+    transform: rotate(90.00deg);
+    border: 1px dashed rgb(118, 118, 118);
+}
+.top-teacher-main .container-7 .line-5{
+    position: absolute;
+    width: 37px;
+    height: 0;
+    left: 710.5px;
+    top: 130px;
+    transform: rotate(90.00deg);
+    border: 1px dashed rgb(118, 118, 118);
+}
+
+.all-of-cards {
+    display: grid; /* Используем сетку для распределения карт */
+    grid-template-columns: repeat(5, calc(20% - 40px)); /* Пять колонок с 20% ширины каждой, вычтем отступы */
+    gap: 50px; /* Отступы между картами */
+    width: 1200px; /* Ширина фрейма */
+    height: 605px; /* Высота фрейма */
+    margin: 370px auto 0; /* Центрируем фрейм на странице */
+}
+
+.all-of-cards .CardOfTheTeacher {
+    /* CardOfTeacher */
+    position: relative;
+    color: black;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: 350;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.all-of-cards .CardOfTheTeacher .FullName {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 150px;
+}
+.all-of-cards .CardOfTheTeacher .Specialization {
+    position: absolute;
+    color: rgb(118, 118, 118);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 210px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.all-of-cards .CardOfTheTeacher .Country {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 230px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.all-of-cards .CardOfTheTeacher img {
+    border-radius: 50%; /* Делает изображение круглым */
+    width: 148px;
+    height: 148px;
+    object-fit: cover; /* Заполняет контейнер, сохраняя при этом соотношение сторон и обрезая изображение */
+    box-sizing: border-box;
+    border: 3px solid rgb(247, 92, 73);
+}
+
+
+.statistics{
+    /* Statistics */
+    position: absolute;
+    font-family: Arial;
+    width: 1200px;
+    height: 165px;
+    left: 98px;
+    right: 98px;
+    top: 4000px; /*!FIX!*/
+    bottom: 1173px;
+    text-align: center;
+}
+.statistics .line-6{
+    position: relative;
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+}
+.statistics-title {
+    font-size: 36px;
+    font-weight: 450;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    color: rgb(0, 0, 0);
+    line-height: 44px;
+}
+.line-table {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    top: 91px;
+    z-index: 1;
+}
+.statistics-table {
+    display: table; /* Установка таблицы */
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse;
+}
+.statistics-table2 {
+    overflow-y: auto; /* Дозволити вертикальне прокручування */
+    max-height: 400px; /* Висота таблиці */
+    border: 1px solid #ccc; /* Рамка, щоб показати межі таблиці */
+    padding: 5px; /* Внутрішні відступи */
+}
+.statistics-row {
+    display: flex;
+}
+.statistics .statistics-row:nth-child(even) {
+    background-color: rgb(249, 245, 249);
+}
+
+.statistics .statistics-row:nth-child(odd) {
+    background-color: inherit;
+}
+.statistics-item {
+    flex: 1;
+    display: table-cell; /* Установка ячейки таблицы */
+    padding: 10px; /* Отступы внутри ячеек */
+    color: rgb(118, 118, 118);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+.statistics-header {
+    flex: 1;
+    display: table-cell;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+}
+.statistics-header:hover {
+    cursor: pointer;
+    font-weight: bold; /* Робимо текст жирним при наведенні */
+}
+.line-8{
+    position: absolute;
+    width: 494px;
+    height: 0;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+
+.favorites-1{
+    display: grid; /* Используем сетку для распределения карт */
+    grid-template-columns: repeat(5, calc(20% - 40px)); /* Пять колонок, вычтем отступы */
+    gap: 50px;
+    width: 1200px;
+    height: 253px;
+    margin: 3800px auto 0; /*!FIX!*/
+    font-family: Arial;
+}
+.favorites-title{
+    /* Favorites */
+    font-family: Arial;
+    position: absolute;
+    width: 237px;
+    height: 38px;
+    right: 575px;
+    top: 4750px; /*!FIX!*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 36px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    line-height: 44px;
+}
+/*.favorites-1 .CardOfTheTeacher {*/
+/*    position: relative;*/
+/*    color: black;*/
+/*    font-size: 22px;*/
+/*    font-weight: 350;*/
+/*    line-height: 27px;*/
+/*    text-align: center;*/
+/*}*/
+/*.favorites-1 .CardOfTheTeacher .FullName {*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    width: 100%;*/
+/*    top: 160px;*/
+/*}*/
+/*.favorites-1 .CardOfTheTeacher .Country {*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    width: 100%;*/
+/*    top: 200px;*/
+/*    font-size: 12px;*/
+/*    line-height: 14px;*/
+/*}*/
+/*.favorites-1 .CardOfTheTeacher img {*/
+/*    border-radius: 50%;*/
+/*    width: 148px;*/
+/*    height: 148px;*/
+/*    object-fit: cover;*/
+/*    box-sizing: border-box;*/
+/*    border: 3px solid rgb(247, 92, 73);*/
+/*}*/
+.favorites-1 .CardOfTheTeacher {
+    /* CardOfTeacher */
+    position: relative;
+    color: black;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: 350;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.favorites-1 .CardOfTheTeacher .FullName {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 150px;
+}
+.favorites-1 .CardOfTheTeacher .Specialization {
+    position: absolute;
+    color: rgb(118, 118, 118);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 210px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.favorites-1 .CardOfTheTeacher .Country {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 230px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.favorites-1 .CardOfTheTeacher img {
+    border-radius: 50%; /* Делает изображение круглым */
+    width: 148px;
+    height: 148px;
+    object-fit: cover; /* Заполняет контейнер, сохраняя при этом соотношение сторон и обрезая изображение */
+    box-sizing: border-box;
+    border: 3px solid rgb(247, 92, 73);
+}
+
+.alot-of-text{
+    /* A lot of text */
+    position: absolute;
+    width: 1250px;
+    height: 136px;
+    left: 95px;
+    right: 126px;
+    top: 5300px; /*!FIX!*/
+    bottom: 111px;
+    color: rgb(118, 118, 118);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: justify;
+}
+.line-7{
+    position: absolute;
+    width: 498px;
+    height: 1px;
+    top: -100px;
+    background-color: black;
+    left: 28%;
+}
+
+.footer{
+    color: rgb(247, 92, 73);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    font-family: Arial;
+}
+.footer .teachers{
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    left: 7.92%;
+    right: 84%;
+    top: 5500px; /*!FIX!*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer .statistics-1{
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    left: 18.25%;
+    right: 286px;
+    top: 5500px; /*!FIX!*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer .favorites-2{
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    left: 28.58%;
+    right: 63.33%;
+    top: 5500px; /*!FIX!*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer .about{
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    left: 37.58%;
+    right: 54.33%;
+    top: 5500px; /*!FIX!*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer .add-teacher {
+    position: absolute;
+    width: 168px;
+    height: 53px;
+    left: 81%;
+    top: 5480px; /*!FIX!*/
+    justify-content: center;
+    display: flex;
+    font-weight: 450;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(247, 92, 73);
+}
+.footer .add-teacher:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .frame-1 {
+        /* Frame 4 */
+        position: relative;
+        width: 768px;
+        height: 2904px;
+        /*display: none;*/
+    }
+
+    .hadder {
+        /* Hadder */
+        position: relative;
+        width: 630px;
+        height: 59px;
+        left: 69px;
+        right: 69px;
+        top: 23px;
+        bottom: 2622px;
+    }
+
+    .hadder .teachinder {
+        /* Teachinder */
+        position: absolute;
+        width: 283px;
+        height: 59px;
+        left: 0;
+        top: 0;
+    }
+
+    .hadder .container-6 .container-2 .name-note-or-age-to-search {
+        /* Name, note or age to search */
+        position: absolute;
+        width: 139.58px;
+        height: 42px;
+        left: 419.37px;
+        top: 17px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .hadder .container-6 .container-8 .search {
+        /* Search */
+        position: absolute;
+        width: 59.1px;
+        height: 42px;
+        left: 570.9px;
+        top: 17px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .stiki {
+        /* Sticki */
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        left: 0;
+        top: 111px;
+
+        color: rgb(247, 92, 73);
+        font-family: Arial;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+
+        display: flex;
+        justify-content: space-around;
+    }
+    .stiki span {
+        margin: 0 70px;
+    }
+    .stiki .add-teacher-1 {
+        position: relative;
+        left: 261px;
+
+        width: 106px;
+        height: 40px;
+
+        display: flex;
+        flex-direction: row;
+
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .top-teacher-main {
+        /* Top Teachers */
+        position: absolute;
+        width: 100%;
+        height: 93px;
+        top: 186px;
+    }
+    .top-teacher-main .line-1 {
+        position: relative;
+        width: 382px;
+        height: 0;
+        left: 50%;
+        top: 0%;
+
+        border: 0.5px solid rgb(0, 0, 0);
+    }
+    .top-teacher-main .container-4 {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        top: 55px;
+        display: flex; /* Размещаем элементы внутри контейнера в строку */
+        justify-content: space-between; /* Распределяем пространство между элементами */
+        align-items: center; /* Выравниваем элементы по центру вертикально */
+    }
+    .top-teacher-main .container-4 .container-7 label {
+        margin-top: 5px;
+    }
+    .top-teacher-main .container-7 .line-2,
+    .top-teacher-main .container-7 .line-3,
+    .top-teacher-main .container-7 .line-4,
+    .top-teacher-main .container-7 .line-5 {
+        position: relative;
+        top: 27px;
+    }
+
+    label[for="age"] {
+        margin-left: 40px;
+    }
+    #age {
+        margin-left: 35px;
+    }
+    .top-teacher-main .container-7 .line-2 {
+        margin-left: 25px;
+    }
+    label[for="region"] {
+        margin-left: 70px;
+    }
+    #region {
+        margin-left: 5px;
+    }
+    .top-teacher-main .container-7 .line-3 {
+        margin-left: -5px;
+    }
+    label[for="sex"] {
+        margin-left: 105px;
+    }
+    #sex {
+        margin-left: -30px;
+    }
+    .top-teacher-main .container-7 .line-4 {
+        margin-left: -60px;
+    }
+    .top-teacher-main .container-7 .only-with-photo {
+        margin-left: 98px;
+    }
+    .top-teacher-main .container-7 .only-favorites {
+        margin-left: 100px;
+    }
+    #only-with-photo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .top-teacher-main .container-7 .line-5 {
+        margin-left: -125px;
+    }
+    #only-favorites {
+        margin-left: -70px;
+        margin-top: 10px;
+    }
+
+    .all-of-cards {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, calc(20% - 40px));
+        gap: 140px; /* Отступы между картами */
+        width: 100%;
+        height: 700px;
+        margin-left: 50px;
+        margin-top: 280px;
+        align-content: space-around;
+    }
+    .all-of-cards .CardOfTheTeacher .FullName {
+        position: absolute;
+        left: 60%;
+        transform: translateX(-50%);
+        width: 150%;
+        top: 160px;
+    }
+    .all-of-cards .CardOfTheTeacher .Specialization {
+        width: 150%;
+        left: 60%;
+    }
+    .all-of-cards .CardOfTheTeacher .Country {
+        left: 60%;
+    }
+
+    .statistics {
+        /* Statistics */
+        position: relative;
+        font-family: Arial;
+        width: 100%;
+        height: auto;
+        left: auto;
+        right: auto;
+        top: 6%;
+        bottom: auto;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .statistics .line-6 {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .statistics .line-8 {
+        width: 60%;
+        margin: 0 auto;
+        top: 500px;
+    }
+    .statistics-title {
+        margin-bottom: 20px;
+        margin-top: 40px;
+        line-height: 30px;
+    }
+    .line-table {
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        top: 60px;
+    }
+    .statistics-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .statistics-item,
+    .statistics-header {
+        padding: 10px;
+        color: rgb(118, 118, 118);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+    }
+    .statistics-header {
+        color: rgb(0, 0, 0);
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+    .statistics-item {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .favorites-1 {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, calc(20% - 40px));
+        gap: 140px; /* Отступы между картами */
+        width: 100%;
+        height: 400px;
+        margin-left: 50px;
+        margin-top: 300px;
+        align-content: space-around;
+    }
+    .favorites-1 .favorites-title {
+        /* Favorites */
+        position: absolute;
+        width: 100%;
+        height: 38px;
+        left: 33%;
+        top: -18%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .favorites-1 .CardOfTheTeacher .FullName {
+        position: absolute;
+        left: 60%;
+        transform: translateX(-50%);
+        width: 150%;
+        top: 160px;
+    }
+    .favorites-1 .CardOfTheTeacher .Country {
+        left: 60%;
+    }
+
+
+    .alot-of-text {
+        /* A lot of text */
+        position: absolute;
+        width: 630px;
+        height: 336px;
+        left: calc(50% - 630px/2);
+        top: 2400px;
+    }
+
+    .line-7 {
+        position: absolute;
+        width: 494px;
+        height: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+    .footer {
+        position: relative; /* Относительное позиционирование */
+        display: flex;
+        flex-direction: row; /* Расположение элементов в столбец */
+        align-items: center; /* Выравнивание элементов по центру */
+    }
+
+    .footer .teachers,
+    .footer .statistics-1,
+    .footer .favorites-2,
+    .footer .about {
+        width: 100%; /* Занимать всю доступную ширину */
+        margin-bottom: 20px; /* Отступ между элементами */
+    }
+    /*.footer {*/
+    /*    !*position: absolute;*!*/
+    /*    !*width: 100%;*!*/
+    /*    !*height: 40px;*!*/
+    /*    !*left: 0;*!*/
+    /*    !*top: 50%;*!*/
+    /*    !*margin-bottom: 1000px;*!*/
+    /*    display: none;*/
+
+        /*color: rgb(247, 92, 73);*/
+        /*font-family: Arial;*/
+        /*font-size: 13px;*/
+        /*font-weight: 400;*/
+        /*line-height: 16px;*/
+
+        /*display: flex;*/
+        /*justify-content: space-around;*/
+        /*margin-bottom: 100px;*/
+
+    /*.footer span {*/
+    /*    margin: 0 70px;*/
+    /*}*/
+    /*.footer .add-teacher {*/
+    /*    position: relative;*/
+    /*    left: 261px;*/
+
+    /*    width: 106px;*/
+    /*    height: 40px;*/
+
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+
+    /*    font-size: 15px;*/
+    /*    line-height: 18px;*/
+    /*    text-align: center;*/
+    /*}*/
+}
